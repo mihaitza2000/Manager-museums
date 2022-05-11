@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Finish reservation
+        </title>
+        <style>
+            form.form-example 
+            {
+                display: table;
+            }
+            div.form-example 
+            {
+                display: table-row;
+            }
+            label, input 
+            {
+                display: table-cell;
+                margin-bottom: 10px;
+            }
+            label 
+            {
+                padding-right: 10px;
+            }
+        </style>
+        <style>
+            #image 
+            {
+                display: none;
+            }
+        </style>
+    </head>
+    <body style = "background: url(background_website.png);
+                   background-size: 100%;
+                   background-repeat: no-repeat">
+    <p align = "center" style = "font-size: 30px;">
+        Please confirm your reservation
+    </p>
+    <form action="" method="get" class="form-example">
+        <div class="form-example">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-example">
+            <label for="surname">Surname: </label>
+            <input type="text" name="surname" id="email" required>
+        </div>
+        <div class="form-example">
+            <label for="card number">Card number: </label>
+            <input id="card credit" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+        </div>
+        <div class="form-example">
+            <img id="image" src = "checkmark.png" style="position:fixed; width:50px;height:50px;">
+            <button type="submit"
+                onclick="show()" 
+                id="btnID">
+                Confirm payment
+         </div>xd
+    </form>
+    
+    <script>
+        function show()
+        {
+            document.getElementById('image')
+                    .style.display = "block";
+ 
+            document.getElementById('btnID')
+                    .style.display = "none";
+        }
+    </script>
+    </body>
+</html>

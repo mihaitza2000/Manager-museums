@@ -1,0 +1,4 @@
+username:     admin
+password:     password
+mail address: managermuseums@gmail.com
+password:     MuS3uMs22
